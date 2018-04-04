@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bungee|Gilda+Display|Open+Sans|Oswald|Raleway|Yeseva+One" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid" style="margin: 0; padding: 0;">
+		<table id="header">
+			<tr>
+				<td width="33%">
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" id="dropButton" type="button" data-toggle="dropdown">Countries
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" id="dropMenu">
+							<li><a href="australia.html">Australia</a></li>
+							<li><a href="greece.html">Greece</a></li>
+							<li><a href="england.html">England</a></li>
+						</ul>
+					</div>
+				</td>
+				<td width="33%">
+					<a href="index.html"><img id="globeImg" src="globe.png"></a>
+				</td>
+				<td width="33%">
+					<button type="button" id="modalButton" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" data-backdrop="false">About Us</button>
+					<div class="modal fade" id="myModal" role="dialog">
+					    <div class="modal-dialog">
+					     	<div class="modal-content modDetails">
+					        	<div class="modal-header">
+					          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+					          		<h4 class="modal-title modHead">Welcome to our travel blog!</h4>
+					        	</div>
+					        	<div class="modal-body modBod">
+					          		<p>This project was done by:<br>Sandhya (E049)<br>Maya (E030)<br>Rohan (E027)</p>
+					        	</div>
+					        	<div class="modal-footer" style="text-align: center;">
+					          		<button type="button" class="btn btn-default btn-primary" data-dismiss="modal" style="width: 10vw;">OK</button>
+					        	</div>
+					      	</div>
+					    </div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="container-fluid colBg">
+		<h1 id="discTxt">Explore the world</h1>
+		<h5 id="discTxt2">Discover.&nbsp&nbspExperience.&nbsp&nbsp Live.</h5>
+		<div class="row" id="div0"></div>
+		<div class="row" id="div0point5">
+			<h2 class="headingTxt1" style="margin-top: 5vw;">Tour the world</h2>
+			<hr width="30%">
+			<p class="aboutgreece" style="font-family: 'Open Sans Light';">Access information about over 20,000 places all around the globe. Check out some of the more popular destinations.</p>
+			<div id="div1">
+				<div class="col-sm-4" id="aPan">
+				<div class="thumbpanel">
+	  				<div class="panel-body panBod">
+  						<div style="overflow: hidden;">
+	  						<img id="aImg" class="imageCss"  src="ausThumbnail1.jpg" width="100%">
+	  					</div>
+  						<div style="background-color: white;padding: 2vw;position: relative;top: -11vh">
+	  						<h3 style="text-transform:uppercase;font-family: 'Gilda Display', serif;font-style: normal;font-weight: 400; background-color: transparent;">Australia</h3>
+	  						<a href="australia.html"><button id="button1" class="btn btn-default">Learn More</button></a>
+	  					</div>
+  					</div>
+  				</div>
+			</div>
+			<div class="col-sm-4" id="gPan">
+				<div class="thumbpanel">
+	  				<div class="panel-body panBod">
+	  					<div style="overflow: hidden;">
+	  						<img id="gImg" class="imageCss"  src="greeceThumbnail2.jpg" width="100%">
+	  					</div>
+	  					<div style="background-color: white;padding: 2vw;position: relative;top: -11vh">
+	  						<h3 style="text-transform:uppercase;font-family: 'Gilda Display', serif;font-style: normal;font-weight: 400; background-color: transparent;">Greece</h3>
+	  						<a href="greece.html"><button id="button2" class="btn btn-default">Learn More</button></a>
+	  					</div>
+	  				</div>
+	  			</div>	
+			</div>
+			<div class="col-sm-4" id="lPan">
+				<div class="thumbpanel">
+	  				<div class="panel-body panBod">
+	  					<div style="overflow: hidden;">
+	  						<img id="lImg" class="imageCss"  src="lonThumbnail2.jpg" width="100%">
+	  					</div>
+	  					<div style="background-color: white;padding: 2vw;position: relative;top: -11vh">
+	  						<h3 style="text-transform:uppercase;font-family: 'Gilda Display', serif;font-style: normal;font-weight: 400; background-color: transparent;">England</h3>
+	  						<a href="england.html"><button id="button3" class="btn btn-default">Learn More</button></a>
+	  					</div>
+	  				</div>
+	  			</div>	
+			</div>		
+			</div>
+			<footer>
+				<div style="width: 100%;background-color: white;height: 1px;opacity: 0.1;margin-bottom: 2vw;"></div>
+				<a href="#"><img src="github.png" width="5%" style="margin-bottom: 1.4vw;opacity: 0.7" id="githubLogo"></a>
+				<p style="margin-bottom: 1.4vw;text-transform: uppercase;"> © Maya Salvi 2018</p>
+			</footer>
+		</div>
+</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#button1").hide();
+			$("#button2").hide();
+			$("#button3").hide();
+			$("#aPan").hover(function(){
+				// $("#gImg").animate({width: '110%'}, "slow");
+				$("#aImg").toggleClass("imageHover");
+				$("#aPan").toggleClass("panelHover");
+				$("#button1").slideToggle();
+			});
+			$("#gPan").hover(function(){
+				// $("#gImg").animate({width: '110%'}, "slow");
+				$("#gImg").toggleClass("imageHover");
+				$("#gPan").toggleClass("panelHover");
+				$("#button2").slideToggle();
+			});
+			$("#lPan").hover(function(){
+				// $("#gImg").animate({width: '110%'}, "slow");
+				$("#lImg").toggleClass("imageHover");
+				$("#lPan").toggleClass("panelHover");
+				$("#button3").slideToggle();
+			});
+			$("#githubLogo").hover(function(){
+				$("#githubLogo").toggleClass("imageHover");
+			});
+			$(window).scroll(function(event){
+				var st = $(this).scrollTop();
+				console.log(st)
+			if (st > 350){
+   				$("#modalButton").css('color','white');
+   				$("#dropButton").css('color','white');
+   				$("#globeImg").attr('src',"globe1.png");
+ 			}
+				else{
+					$("#modalButton").css('color','black');
+					$("#dropButton").css('color','black');
+					$("#globeImg").attr('src',"globe.png");
+				}
+			});	
+   		// 		// if (st < lastScrollTop){
+   		// 		else if (st < 50){
+   		// 		 	// alert("up")
+   		// 		 	console.log("st",st,"lastScrollTop",lastScrollTop);
+     //  				$("#discTxt").fadeTo("slow",0.9);
+     //  				lastScrollTop = st;}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+body {
+		background: url('aus7.jpg');
+		background-attachment: fixed;
+		font-family: 'Bellefair', sans-serif;
+		font-size: 25px;
+		color: black;
+	}
+	.zoom:hover {
+    	transform: scale(1.1, 1.1);
+    	transition-duration: 0.8s;
+ 	}
+ 	.places2eat {
+ 		padding: 7px;
+ 		padding-bottom: 5px;
+ 		color: #505050;
+ 	}
+ 	.places2eat:hover {
+ 		background-color: pink;
+ 		transition-duration: 0.5s;
+ 		border-radius: 10px;
+ 	}
+ 	#food:hover {
+ 		background-color: white;
+ 		transition-duration: 0.5s;
+ 	}
+ 	.est_b {
+ 		transition-duration: 0.5s;
+ 	}
+
+ 	.places2party {
+ 		padding: 7px;
+ 		padding-bottom: 5px;
+ 		color: #505050;
+ 	}
+ 	.places2party:hover {
+ 		background-color: pink;
+ 		transition-duration: 0.5s;
+ 		border-radius: 10px;
+ 	}
+ 	#party:hover {
+ 		background-color: white;
+ 		transition-duration: 0.5s;
+ 	}
+
+ 	.aleg {
+ 		background-color: rgba(255,255,255,0.4);
+ 		padding: 10px;
+ 		margin-left: 10px;
+ 		font-size: 40px;
+ 	}
+ 	.aleg:hover {
+ 		background-color: white;
+ 		transition-duration: 0.5s;
+ 		font-size: 50px;
+ 	}
+
+ #header{
+background: linear-gradient(to bottom, rgba(59,124,162,1),rgba(59,124,162,0.5),rgba(118,86,101,0));
+z-index: 1;
+position: fixed;
+width: 100vw;
+text-align: center;
+height: 7.5vw; 
+font-family: 'Open Sans Light', sans-serif;
+color:black;
+margin: 0;
+}
+#header h3{
+text-transform: uppercase;
+text-align: center;
+font-size: 1.3vw;
+font-family: 'Open Sans Light', sans-serif;
+
+}
+#dropButton{
+background: transparent;
+outline: none;
+border:none;
+text-transform: uppercase;
+text-align: center;
+font-size: 1.3vw;
+color: black;
+margin-top: 0.8vw;
+}
+#dropButton:hover{
+background: transparent;
+}
+
+#dropButton:active:focus{
+background: transparent;
+box-shadow: none;
+}
+
+#dropMenu{
+background-color:rgba(207,204,246,0.7);
+border:none;
+margin-left:10vw;
+}
+#modalButton{
+background: transparent;
+outline: none;
+border:none;
+text-transform: uppercase;
+text-align: center;
+font-size: 1.3vw;
+color: black;
+margin-top: 0.8vw;
+}
+#modalButton:hover{
+background: transparent;
+}
+
+#modalButton:active:focus{
+background: transparent;
+box-shadow: none;
+}
+.modBod{
+font-size: 1.2vw;
+text-transform: capitalize;
+line-height: 2; 
+}
+.modHead{
+font-size: 1.7vw;
+text-transform: capitalize;
+}
+.modDetails{
+/*background-color:rgb(227, 233, 237);*/
+background-color: #F2F7F7;
+
+}
+#globeImg{
+width: 4vw;
+}
+video{
+	width: 100%;
+	height: auto;
+}

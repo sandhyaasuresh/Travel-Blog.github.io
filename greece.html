@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greece</title>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bungee|Gilda+Display|Open+Sans|Oswald|Raleway|Yeseva+One" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Marcellus+SC|Playfair+Display" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid" style="margin: 0; padding: 0;">
+		<table id="header">
+			<tr>
+				<td width="33%">
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" id="dropButton" type="button" data-toggle="dropdown">Countries
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" id="dropMenu">
+							<li><a href="australia.html">Australia</a></li>
+							<li><a href="greece.html">Greece</a></li>
+							<li><a href="england.html">England</a></li>
+						</ul>
+					</div>
+				</td>
+				<td width="33%">
+					<a href="index.html"><img id="globeImg" src="globe.png"></a>
+				</td>
+				<td width="33%">
+					<button type="button" id="modalButton" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" data-backdrop="false">About Us</button>
+					<div class="modal fade" id="myModal" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content modDetails">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title modHead">Welcome to our travel blog!</h4>
+								</div>
+								<div class="modal-body modBod">
+									<p>This project was done by:<br>Sandhya (E049)<br>Maya (E030)<br>Rohan (E027)</p>
+								</div>
+								<div class="modal-footer" style="text-align: center;">
+									<button type="button" class="btn btn-default btn-primary" data-dismiss="modal" style="width: 10vw;">OK</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			
+		</table>
+	</div>
+	<div class="container-fluid colBg2">
+		<h1 id="discTxt">Greece</h1>
+		<h5 id="discTxt2">The all time classic.</h5>
+		<div class="row" id="div0_1"></div>
+		<div class="row" id="div1_1">
+			<h2 class="headingTxt1">About</h2>
+			<hr width="30%" style="margin-bottom: 5vw;">
+			<p class="aboutgreece">Located at the crossroads of Asia, Africa, and Europe, Greece has a rich cultural and historic background. Ancient Greek culture is noted for its government, art, architecture, philosophy, and sports, all of which became foundations for modern western society.</p>
+			<p class="aboutgreece">Known for its fascinating history and natural beauty, the countless islands, sandy beaches, ancient archaeological sites, and a balmy Mediterranean climate, it one of Europe's prime tourist destinations. Eighty percent of Greece is mountainous, and Mount Olympus is its highest peak at 2,918 meters.</p>
+			<h2 class="headingTxt1">Popular Attractions</h2>
+			<hr width="30%">
+			<div class="col-sm-6 col" style="margin-top: 1vw;">
+				<div id="myCarousel1" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel1" data-slide-to="0" class="item1a active"></li>
+						<li data-target="#myCarousel1" data-slide-to="1" class="item2a"></li>
+						<li data-target="#myCarousel1" data-slide-to="2" class="item3a"></li>
+						<li data-target="#myCarousel1" data-slide-to="3" class="item4a"></li>
+						<li data-target="#myCarousel1" data-slide-to="4" class="item5a"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="sight1.jpg" width="100%">
+						</div>
+						<div class="item">
+							<img src="sight20.jpg" width="100%">
+						</div>
+						<div class="item">
+							<img src="sight31.jpeg" width="100%">
+						</div>
+						<div class="item">
+							<img src="sight4.jpg" width="100%">
+						</div>
+						<div class="item">
+							<img src="sight5.jpg" width="100%">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6" style="margin-top: 1vw; padding-top: 9vw;padding-left: 3vw;padding-right: 3vw;">
+				<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators" style="opacity: 0.5; top: 18vw; transform: scale(0.8);">
+						<li data-target="#myCarousel2" data-slide-to="0" class="item1b active"></li>
+						<li data-target="#myCarousel2" data-slide-to="1" class="item2b"></li>
+						<li data-target="#myCarousel2" data-slide-to="2" class="item3b"></li>
+						<li data-target="#myCarousel2" data-slide-to="3" class="item4b"></li>
+						<li data-target="#myCarousel2" data-slide-to="4" class="item5b"></li>
+					</ol>
+					<div class="carousel-inner carouselText">
+						<div class="item active">
+							<h3 class="headingTxt2">Acropolis of Athens</h3>
+							<hr width="40%">
+							<p>Ruins of iconic 5th-century B.C. temple complex on Athens' rocky hilltop undergoing restoration.</p>
+						</div>
+						<div class="item">
+							<h3 class="headingTxt2">Meteora</h3>
+							<hr width="40%">
+							<p>6 Eastern Orthodox monasteries listed as a World Heritage site, built on top of rock pillars.</p>
+						</div>
+						<div class="item">
+							<h3 class="headingTxt2">Parthenon</h3>
+							<hr width="40%">
+							<p>Restored, landmark temple ruins on archaeological site with iconic Doric columns built from 447 BC.</p>
+						</div>
+						<div class="item">
+							<h3 class="headingTxt2">Temple of Olympian Zeus</h3>
+							<hr width="40%">
+							<p>Vast temple begun in 6th century B.C. on the site of an ancient outdoor sanctuary dedicated to Zeus.</p>
+						</div>
+						<div class="item">
+							<h3 class="headingTxt2">Oia</h3>
+							<hr width="40%">
+							<p>Town in Santorini, noted for it's white and blue domed houses overlooking the ocean.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="div2_1">
+			<h2 class="headingTxt1">Major Cities</h2>
+			<hr width="30%">
+			<p class="aboutgreece"  style="margin-bottom: 2vw;font-family: 'Open Sans Light',serif;">Click on the cities to know more about them</p>
+			<div class="col-sm-3 cityImgs">
+				<div style="background:url('athens.jpeg') no-repeat; height: 15vw; background-size:cover; overflow: hidden;" class="img-rounded" id="athensImg">
+					<div class="overlay" id="overlay1"><p>Athens</p></div>
+				</div>
+				<ul class="list-group" id="athensInfo">
+					 <li class="list-group-item" style="text-transform: uppercase;">Known For:</li>
+					 <li class="list-group-item">Acropolis & Acropolis Museum</li>
+					 <li class="list-group-item">Athens & Epidaurus Festival: Summer</li>
+					 <li class="list-group-item">Odeon of Herodes Atticus</li>
+					 <li class="list-group-item">Plaka</li>
+
+				</ul>
+			</div>
+			<div class="col-sm-3 cityImgs" style="">
+				<div style="background:url('santorini.jpg') no-repeat; height: 15vw;background-size:cover;overflow: hidden;" class="img-rounded" id="santoriniImg">
+					<div class="overlay" id="overlay2"><p>Santorini</p></div>
+				</div>
+				<ul class="list-group infoList" id="santoriniInfo">
+					<li class="list-group-item" style="text-transform: uppercase;">Known For:</li>
+					<li class="list-group-item">Black and red sand beaches</li>
+					<li class="list-group-item">Minoan archaeological site at Akrotiri</li>
+					<li class="list-group-item">Sunset view from Oia</li>
+					<li class="list-group-item">Santorini Caldera</li>
+				</ul>
+			</div>
+			<div class="col-sm-3 cityImgs" style="">
+				<div style="background:url('delphi.jpg') no-repeat; height: 15vw; background-size:cover;" class="img-rounded" id="delphiImg">
+					<div class="overlay" id="overlay3"><p>Delphi</p></div>
+				</div>
+				<ul class="list-group" id="delphiInfo">
+					<li class="list-group-item" style="text-transform: uppercase;">Known For:</li>
+					<li class="list-group-item">Temple of Apollo</li>
+					<li class="list-group-item">Athenian Treasury</li>
+					<li class="list-group-item">Delphi Archaeological Museum</li>
+					<li class="list-group-item">Castalian Spring</li>
+				</ul>
+			</div>
+			<div class="col-sm-3 cityImgs">
+				<div style="background:url('rhodes.jpg') no-repeat; height: 15vw; background-size:cover;" class="img-rounded" id="rhodesImg">
+					<div class="overlay" id="overlay4"><p>Rhodes</p></div>
+				</div>
+				<ul class="list-group" id="rhodesInfo">
+					 <li class="list-group-item" style="text-transform: uppercase;">Known For</li>
+					 <li class="list-group-item">Palace of the Grand Master of the Knights</li>
+					 <li class="list-group-item">Archaeological Museum of Rhodes</li>
+					 <li class="list-group-item">Colossus of Rhodes</li>
+					 <li class="list-group-item">Acropolis of Rhodes</li>
+				</ul>
+			</div>
+		</div>	
+		<div class="row" id="div3_1">
+		<h2 class="headingTxt1">Weather</h2>
+			<hr width="30%" style="margin-bottom: 3vw;">	
+			<a class="weatherwidget-io" href="https://forecast7.com/en/37d9823d73/athens/" data-label_1="ATHENS" data-label_2="Greece" data-font="Roboto Slab" data-theme="original" >ATHENS Greece</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+			<footer>
+				<div style="width: 100%;background-color: white;height: 1px;opacity: 0.1;margin-bottom: 2vw;"></div>
+				<a href="#"><img src="github.png" width="5%" style="margin-bottom: 1.4vw;opacity: 0.7" id="githubLogo"></a>
+				<p style="margin-bottom: 1.4vw;text-transform: uppercase;"> Made by E030 <br>© Maya Salvi 2018</p>
+			</footer>
+		</div>	
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function (){
+			$('[id^="myCarousel"]').carousel({interval: 3500, pause: "false"});
+			$(".item1b").click(function(){
+			$("#myCarousel1").carousel(0);
+			});
+		    $(".item2b").click(function(){
+		        $("#myCarousel1").carousel(1);
+		    });
+		    $(".item3b").click(function(){
+		        $("#myCarousel1").carousel(2);
+		    });
+		    $(".item4b").click(function(){
+		        $("#myCarousel1").carousel(3);
+		    });
+		    $(".item5b").click(function(){
+		        $("#myCarousel1").carousel(4);
+		    });
+		    $(".item1a").click(function(){
+				$("#myCarousel2").carousel(0);
+			});
+		    $(".item2a").click(function(){
+		        $("#myCarousel2").carousel(1);
+		    });
+		    $(".item3a").click(function(){
+		        $("#myCarousel2").carousel(2);
+		    });
+		    $(".item4a").click(function(){
+		        $("#myCarousel2").carousel(3);
+		    });
+		    $(".item5a").click(function(){
+		        $("#myCarousel2").carousel(4);
+		    });
+		    $("#githubLogo").hover(function(){
+				$("#githubLogo").toggleClass("imageHover");
+			});
+		    $(window).scroll(function(event){
+				var st = $(this).scrollTop();
+				console.log(st)
+			if (st > 350){
+   				$("#modalButton").css('color','white');
+   				$("#dropButton").css('color','white');
+   				$("#globeImg").attr('src',"globe1.png");
+ 			}
+				else{
+					$("#modalButton").css('color','black');
+					$("#dropButton").css('color','black');
+					$("#globeImg").attr('src',"globe.png");
+				}
+			});	
+			$('#athensInfo').hide()
+			$('#athensImg').click(function(){
+				$('#athensInfo').slideToggle();
+				$('#overlay1').toggle();
+				$('#delphiInfo').slideUp();
+				$('#rhodesInfo').slideUp();
+				$('#santoriniInfo').slideUp();
+				$('#overlay2').show();
+				$('#overlay3').show();
+				$('#overlay4').show();
+			});
+			$('#santoriniInfo').hide()
+			$('#santoriniImg').click(function(){
+				$('#santoriniInfo').slideToggle();
+				$('#overlay2').toggle();
+				$('#athensInfo').slideUp();
+				$('#delphiInfo').slideUp();
+				$('#rhodesInfo').slideUp();
+				$('#overlay1').show();
+				$('#overlay3').show();
+				$('#overlay4').show();
+			});
+			$('#delphiInfo').hide()
+			$('#delphiImg').click(function(){
+				$('#delphiInfo').slideToggle();
+				$('#overlay3').toggle();
+				$('#athensInfo').slideUp();
+				$('#rhodesInfo').slideUp();
+				$('#santoriniInfo').slideUp();
+				$('#overlay1').show();
+				$('#overlay2').show();
+				$('#overlay4').show();
+			});
+			$('#rhodesInfo').hide()
+			$('#rhodesImg').click(function(){
+				$('#rhodesInfo').slideToggle();
+				$('#overlay4').toggle();
+				$('#athensInfo').slideUp();
+				$('#delphiInfo').slideUp();
+				$('#santoriniInfo').slideUp();
+				$('#overlay1').show();
+				$('#overlay2').show();
+				$('#overlay3').show();
+			});
+
+		});
+				// var oldPos = 0;
+				// $(window).scroll(function(event){
+				// 	var currPos = $(this).scrollTop(); 
+				// console.log("currPos",currPos);
+				// console.log("oldPos",oldPos);
+			// 	if (currPos>oldPos){
+			// 		if(currPos<740){
+			// 			console.log("yus1",st);
+			// 			// var sum=oldPos+750
+			// 			$('html,body').animate({
+			// 			scrollTop: 750
+			// // 			scrollTop: $('#div1_1').offset().top
+			// //  //              // document.getElementById('div1_1').scrollIntoView(true);
+			//         }, 2000);
+			// 	}
+
+			//         // st=750;
+			//         // lastPos=750;
+			//         lastPos=st; 
+			// 		}
+			// 		if(st==723)	{
+			// 		console.log("yus2",st);
+			//         // console.log("lastPos",lastPos);
+			// 		$('html,body').animate({
+			// 			scrollTop: 1470
+			// // //  //              // document.getElementById('div1_1').scrollIntoView(true);
+			//         }, 1000);
+
+			// 	lastPos=1470; 
+			// 	}
+			// oldPos=currPos;
+			// }
+			// else{
+			// 	$('html, body').animate({
+			// 			// scrollTop: lastPos + 750
+			// 			scrollTop: st
+			// 		},1000);
+			// 	lastPos=st; 
+			// }
+		// });
+	</script>
+</body>
+</html>

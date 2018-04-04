@@ -1,0 +1,569 @@
+<html lang="en">
+<head>
+	<title>Australia</title>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link href="css/bootstrap.min.css" rel="stylesheet"> <!--CSS File Name-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script type="text/javascript" src="query.js"></script>
+  	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
+</head>
+<script>
+function formvalid()
+{}
+
+	//email validation
+	var em = document.getElementById("em").value;
+	var atpos = x.indexof("@");
+	var dotpos = x.indexof(".");
+	nul = ' ';
+	if(!em.test(nul))
+	{
+		alert("Error! E-mail is blank.");
+	}
+	if(atpos <= 1 || dotpos < atpos + 2 || dotpos >= em.length) {
+		alert("Invalid e-mail. Enter again.");
+		return false;
+	}
+
+}
+</script>
+<body><div class="container-fluid" style="margin: 0; padding: 0;">
+		<table id="header" style="padding-bottom: 2.5vw; height: 7vw; background: linear-gradient(to bottom, rgba(59,124,162,1),rgba(59,124,162,0.9),rgba(59,124,162,0.7),rgba(59,124,162,0.5),rgba(59,124,162,0));">
+			<tr>
+				<td width="33%">
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" id="dropButton" type="button" data-toggle="dropdown">Countries
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" id="dropMenu">
+							<li><a href="australia.html">Australia</a></li>
+							<li><a href="greece.html">Greece</a></li>
+							<li><a href="england.html">England</a></li>
+						</ul>
+					</div>
+				</td>
+				<td width="33%">
+					<a href="index.html"><img id="globeImg" src="globe.png"></a>
+				</td>
+				<td width="33%">
+					<button type="button" id="modalButton" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" data-backdrop="false">About Us</button>
+					<div class="modal fade" id="myModal" role="dialog">
+					    <div class="modal-dialog">
+					     	<div class="modal-content modDetails">
+					        	<div class="modal-header">
+					          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+					          		<h4 class="modal-title modHead">Welcome to our travel blog!</h4>
+					        	</div>
+					        	<div class="modal-body modBod">
+					          		<p>This project was done by:<br>Sandhya (E049)<br>Maya (E030)<br>Rohan (E027)</p>
+					        	</div>
+					        	<div class="modal-footer" style="text-align: center;">
+					          		<button type="button" class="btn btn-default btn-primary" data-dismiss="modal" style="width: 10vw;">OK</button>
+					        	</div>
+					      	</div>
+					    </div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div><br><br>
+	<div class="container-fluid">
+	<!-- <nav class="navbar navbar-default navbar-fixed-top">
+  		<div class="container-fluid">
+  	  		<div class="navbar-header">
+      			<a class="navbar-brand" href="#"><span style="font-size: 30px; color: black;">MSR</span></a>
+    		</div>
+    		<ul class="nav navbar-nav">
+      			<li class="active"><a href="#">Australia</a></li>
+      			<li><a href="#">London</a></li>
+      			<li><a href="#">Greece</a></li>
+    		</ul>
+    		<form class="navbar-form navbar-right" action="/action_page.php">
+      			<div class="form-group">
+        			<input type="text" class="form-control" placeholder="Search">
+      			</div>
+      			<button type="submit" class="btn btn-default">Submit</button>
+    		</form>
+ 		</div>
+	</nav> -->
+
+	<div class="row">
+		<div class="col-lg-6">
+			<br><p style="font-family: 'Kaushan Script', cursive; font-size: 70px; color: white;">Welcome to Australia!</p>
+		</div>
+	</div>
+	<br>
+		<h2 style="font-family: 'Alegreya SC', serif; font-size: 40px;"> <span class="aleg">City Tours </span></h2><br>
+  		<div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%; border: 10px solid white; ">
+    <!-- Indicators -->
+    		<ol class="carousel-indicators">
+      			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      			<li data-target="#myCarousel" data-slide-to="1"></li>
+      			<li data-target="#myCarousel" data-slide-to="2"></li>
+      			<li data-target="#myCarousel" data-slide-to="3"></li>
+      			<li data-target="#myCarousel" data-slide-to="4"></li>
+    		</ol>
+
+    <!-- Wrapper for slides -->
+    	<div class="carousel-inner">
+      		<div class="item active">
+        		<img src="harbour.jpg" alt="Harbour Bridge" style="width:100%;">
+        		<div class="carousel-caption">
+        			<p style="font-size: 30px; font-weight: bold;"><span style="color: black; background-color: white; padding: 5px;">Harbour Bridge, Sydney</span></p>
+        		</div>
+      		</div>
+
+     		<div class="item">
+       			<img src="opera.jpg" alt="Opera House" style="width:100%;">
+       			<div class="carousel-caption">
+        			<p style="font-size: 30px; font-weight: bold"><span style="color: black; background-color: white; padding: 5px;">Opera House, Sydney</span></p>
+        		</div>
+      		</div>
+    
+      		<div class="item">
+        		<img src="surfer.jpg" alt="Surfer's Paradise" style="width:100%;">
+        		<div class="carousel-caption">
+        			<p style="font-size: 30px; font-weight: bold"><span style="color: black; background-color: white; padding: 5px;">Surfer's Paradise, Gold Coast</span></p>
+        		</div>
+      		</div>
+
+      		<div class="item">
+        		<img src="whale.jpg" alt="Whale Watching" style="width:100%;">
+        		<div class="carousel-caption">
+        			<p style="font-size: 30px; color: black; font-weight: bold;"><span style="color: black; background-color: white; padding: 5px;">Whale Watching, Christchurch</span></p>
+        		</div>
+      		</div>
+
+      		<div class="item">
+        		<img src="darling.jpg" alt="Darling Harbour" style="width:100%; height: 600px;">
+        		<div class="carousel-caption">
+        			<p style="font-size: 30px; color: white; font-weight: bold;"><span style="color: black; background-color: white; padding: 5px;">Darling Harbour, Sydney</span></p>
+        		</div>
+      		</div>
+    	</div>
+
+    <!-- Left and right controls -->
+    	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      		<span class="glyphicon glyphicon-chevron-left"></span>
+      		<span class="sr-only">Previous</span>
+    	</a>
+    	<a class="right carousel-control" href="#myCarousel" data-slide="next">
+      		<span class="glyphicon glyphicon-chevron-right"></span>
+      		<span class="sr-only">Next</span>
+    	</a>
+  	</div>
+
+	<div class="row" style="margin-top: 100px;">
+		<h2 style="font-family: 'Alegreya SC', serif; margin-left: 10px;"><span class="aleg">Day Tours</span></h2><br>
+			<div class="col-lg-3">
+				<div class="zoom">
+				<div class="thumbnail">
+      					<button id="butt" class="btn btn-default" data-toggle="modal" data-target="#phil" style="background: url(phillip.jpg); background-size: contain; width: 300px;height: 160px"></button>
+					<div class="caption">
+						<p><center>Phillip Island
+							<br>(Click for more information)</center></p>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="zoom">
+				<div class="thumbnail">
+      					<button id="butt" class="btn btn-default" data-toggle="modal" data-target="#gr8" style="background: url(oceangr8.jpg); background-size: contain; width: 300px;height: 160px"></button>
+					<div class="caption">
+						<p><center>Great Ocean Tour 
+						<br>(Click for more information)</center></p>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="zoom">
+				<div class="thumbnail">
+      					<button id="butt" class="btn btn-default" data-toggle="modal" data-target="#bloo" style="background: url(bluemountain.jpg); background-size: contain; width: 300px;height: 160px"></button>
+					<div class="caption">
+						<p><center>Blue Mountains
+						<br>(Click for more information)</center></p>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="zoom">
+				<div class="thumbnail">
+      					<button id="butt" class="btn btn-default" data-toggle="modal" data-target="#barrier" style="background: url(barrier.jpg); background-size: contain; width: 300px;height: 160px"></button>
+					<div class="caption">
+						<p><center>Great Barrier Reef
+						<br>(Click for more information)</center></p>
+					</div>
+				</div>
+				</div>
+			</div>
+	</div>
+	<br><br>
+
+	<div class="container">
+  		<div class="jumbotron">
+    		<h1 style="font-family: 'Satisfy', cursive; text-align: center;">Discover Australia's unique destinations.</h1> <br>
+    			<img src="roo.jpg" style="width: 1025px;">
+  		</div>
+	</div><br>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-1">
+				
+			</div>
+			<div class="col-lg-6" style="background-color: rgba(255,255,255,0.4)">
+				<ul class="list-group">
+					<h4><center><span class="places2eat" style="border-bottom: pink solid 3px; font-size: 30px;">Places to eat</span></center></h4>
+  					<div id="food" class="est"><li class="list-group-item" style="border: none; background-color: rgba(255,255,255,0); font-size: 20px;">est.</li></div>
+  					<div id="food" class="ochre"><li class="list-group-item" style="border: none; background-color: rgba(255,255,255,0); font-size: 20px;">Ochre Restaurant</li></div>
+  					<div id="food" class="graze"><li class="list-group-item" style="border: none; background-color: rgba(255,255,255,0); font-size: 20px;">Graze MCA</li></div>
+  					<div id="food" class="alch"><li class="list-group-item" style="border: none; background-color: rgba(255,255,255,0); font-size: 20px;">Alchemy </li></div>
+				</ul>
+			</div>
+
+			<!--EST RESTAURANT-->
+			<div class="est_a">
+				<div class="col-lg-5" style="padding-left: 70px; background-color: white; padding: 15px;">
+					<div class="card">
+            			<img class="card-img-top" src="est.jpg" alt="Card image" style="width: 450px; height: 200px;">
+              			<div class="card-body">                			
+              				<p class="card-text" style="font-size: 20px; padding-top: 10px;">
+                			Upscale French fusion cuisine by renowned chef Peter Doyle, in a light-filled space.
+							<br>Address: level 1/252 George St, Sydney NSW 2000, Australia
+							<br>Hours: Closes soon: 10PM ⋅ Opens 12PM Mon
+							<br>Menu: merivale.com.au
+							<br>Phone: +61 2 9114 7312
+                			</p>
+              				<button id="estbut1" class="btn btn-primary">Close</a>
+              			</div>
+         			</div>
+				</div>
+			</div>
+			<div class="est_b">
+				<div class="col-lg-5" style="padding-left: 70px;">
+					<img src="est.jpg" style="width: 450px; height: 200px; border: white solid 10px;">
+				</div>
+			</div>
+
+			<!--OCHRE RESTAURANT-->
+			<div class="ochre_a">
+				<div class="col-lg-5" style="padding-left: 70px; background-color: white; padding: 15px;">
+					<div class="card">
+            			<img class="card-img-top" src="ochre.jpg" alt="Card image" style="width: 450px; height: 200px;">
+              			<div class="card-body">                			
+              				<p class="card-text" style="font-size: 20px; padding-top: 10px;">
+                			Adventurous menus featuring native game, herbs and seafood, served in a contemporary dining room.
+							<br>Address: 6/1 Marlin Parade, Cairns City QLD 4870, Australia
+							<br>Hours: Opens 11AM	
+							<br>Menu: ochrerestaurant.com.au
+							<br>Phone:  +61 7 4051 0100
+                			</p>
+              				<button id="ochrebut" class="btn btn-primary">Close</a>
+              			</div>
+         			</div>
+				</div>
+			</div>
+			<div class="ochre_b">
+				<div class="col-lg-5" style="padding-left: 70px;">
+					<img src="ochre.jpg" style="width: 450px; height: 200px; border: white solid 10px;">
+				</div>
+			</div>
+
+			<!--GRAZE MCA-->
+			<div class="graze_a">
+				<div class="col-lg-5" style="padding-left: 70px; background-color: white; padding: 15px;">
+					<div class="card">
+            			<img class="card-img-top" src="graze.jpg" alt="Card image" style="width: 450px; height: 200px;">
+              			<div class="card-body">                			
+              				<p class="card-text" style="font-size: 20px; padding-top: 10px;">
+                			Adventurous menus featuring native game, herbs and seafood, served in a contemporary dining room.
+							<br>Address: 6/1 Marlin Parade, Cairns City QLD 4870, Australia
+							<br>Hours: Opens 11AM	
+							<br>Menu: ochrerestaurant.com.au
+							<br>Phone:  +61 7 4051 0100
+                			</p>
+              				<button id="grazebut" class="btn btn-primary">Close</a>
+              			</div>
+         			</div>
+				</div>
+			</div>
+			<div class="graze_b">
+				<div class="col-lg-5" style="padding-left: 70px;">
+					<img src="graze.jpg" style="width: 450px; height: 200px; border: white solid 10px;">
+				</div>
+			</div>
+
+			<!--ALCHEMY-->
+			<div class="alch_a">
+				<div class="col-lg-5" style="padding-left: 70px; background-color: white; padding: 15px;">
+					<div class="card">
+            			<img class="card-img-top" src="alchemy.jpg" alt="Card image" style="width: 450px; height: 200px;">
+              			<div class="card-body">                			
+              				<p class="card-text" style="font-size: 20px; padding-top: 10px;">
+                			Upscale riverside dining venue with a sleek interior and creative Modern Australian tasting menus.
+							<br>175 Eagle St, Brisbane City QLD 4000, Australia
+							<br>Opens 12 noon.
+							<br>Menu: alchemyrestaurant.com.au
+							<br>Phone: +61 7 3229 3175
+                			</p>
+              				<button id="alchbut1" class="btn btn-primary">Close</a>
+              			</div>
+         			</div>
+				</div>
+			</div>
+			<div class="alch_b">
+				<div class="col-lg-5" style="padding-left: 70px;">
+					<img src="alchemy.jpg" style="width: 450px; height: 200px; border: white solid 10px;">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+
+<div class="container">
+		<div class="row">
+			<div class="col-lg-1">
+				
+			</div>
+			<div class="col-lg-6" style="background-color: rgba(255,255,255,0.4)">
+				<ul class="list-group">
+					<h4><center><span class="places2party" style="border-bottom: pink solid 3px; font-size: 30px;">Places to party</span></center></h4>
+  					<div id="party" class="byron"><li class="list-group-item" style="border: none; background-color: rgba(255,255,255,0); font-size: 20px;">Byron Bay</li></div>
+  					<div id="party" class="airline"><li class="list-group-item" style="border: none; background-color: rgba(255,255,255,0); font-size: 20px;">Airline Beach & Whitsundays</li></div>
+  					<div id="party" class="Magnetic"><li class="list-group-item" style="border: none; background-color: rgba(255,255,255,0); font-size: 20px;">Magnetic Island</li></div>
+  					<div id="partyparty" class="perth"><li class="list-group-item" style="border: none; background-color: rgba(255,255,255,0); font-size: 20px;">Perth </li></div>
+				</ul>
+			</div>
+
+			<!--BYRON BAY-->
+			<div class="byron_a">
+				<div class="col-lg-5" style="padding-left: 70px; background-color: white; padding: 15px;">
+					<div class="card">
+            			<img class="card-img-top" src="BYRON.jpg" alt="Card image" style="width: 450px; height: 200px;">
+              			<div class="card-body">                			
+              				<p class="card-text" style="font-size: 20px; padding-top: 10px;">
+                			Sydney’s beaches might be great, but they aren’t Byron Bay great. A surf town with cool, chilled hippie-alternative vibes, it’s something of an Australian party mecca.
+                			<br><br>So, where to start? Undoubtedly your first port of call the Railway Friendly Bar or Treehouse on Belongil for some stellar live music, before heading over to Cheeky Monkey to dance on the tables. Or alternatively, you could spend the entire night in Woody’s Surf Shack and tick off all those things in one place…
+                			</p>
+              				<button id="byronbut1" class="btn btn-primary">Close</a>
+              			</div>
+         			</div>
+				</div>
+			</div>
+			<div class="byron_b">
+				<div class="col-lg-5" style="padding-left: 70px;">
+					<img src="BYRON.jpg" style="width: 450px; height: 200px; border: white solid 10px;">
+				</div>
+			</div>
+
+			<!--AIRLINE-->
+			<div class="airline_a">
+				<div class="col-lg-5" style="padding-left: 70px; background-color: white; padding: 15px;">
+					<div class="card">
+            			<img class="card-img-top" src="airline.jpg" alt="Card image" style="width: 450px; height: 200px;">
+              			<div class="card-body">                			
+              				<p class="card-text" style="font-size: 20px; padding-top: 10px;">
+                			While Airlie Beach is a party town in its own right, it’s the party cruise around the Whitsunday Islands that’s the real draw. The islands themselves are tropical perfection, with white sands and glistening turquoise water, all under Australia’s burning northern sun. With bars on the boats, pumping tunes and even a fun slide, this is the ultimate party that tours paradise.
+                			<br><br> Of course, no one’s quite ready to give in once the boat trip is finished. Most travellers hit up the main strip afterwards for a one-night booze fuelled debriefing before moving on. Favourites include the massive Magnums and the Mama Africa Bar.
+                			</p>
+              				<button id="airlinebut" class="btn btn-primary">Close</a>
+              			</div>
+         			</div>
+				</div>
+			</div>
+			<div class="airline_b">
+				<div class="col-lg-5" style="padding-left: 70px;">
+					<img src="airline.jpg" style="width: 450px; height: 200px; border: white solid 10px;">
+				</div>
+			</div>
+
+			<!--MAGNETIC ISLAND-->
+			<div class="Magnetic_a">
+				<div class="col-lg-5" style="padding-left: 70px; background-color: white; padding: 15px;">
+					<div class="card">
+            			<img class="card-img-top" src="Magnetic.jpg" alt="Card image" style="width: 450px; height: 200px;">
+              			<div class="card-body">                			
+              				<p class="card-text" style="font-size: 20px; padding-top: 10px;">
+                			Named for the magnetic effect it had on Captain James Cook’s compass back when he was busy discovering the great land of Oz, now the island pulls in countless party goers for its Full Moon Party. 
+                			<br><br>International and local DJs will spin tunes on the beach beside the Base Backpackers Hostel, attracting around 3000 revellers every month, who slap on the body paint and groove beside the fire twirlers until the sun comes up.
+                			</p>
+              				<button id="Magneticbut" class="btn btn-primary">Close</a>
+              			</div>
+         			</div>
+				</div>
+			</div>
+			<div class="Magnetic_b">
+				<div class="col-lg-5" style="padding-left: 70px;">
+					<img src="Magnetic.jpg" style="width: 450px; height: 200px; border: white solid 10px;">
+				</div>
+			</div>
+
+			<!--PERTH-->
+			<div class="perth_a">
+				<div class="col-lg-5" style="padding-left: 70px; background-color: white; padding: 15px;">
+					<div class="card">
+            			<img class="card-img-top" src="perth.jpg" alt="Card image" style="width: 450px; height: 200px;">
+              			<div class="card-body">                			
+              				<p class="card-text" style="font-size: 20px; padding-top: 10px;">
+                			Perth is no longer the isolated and sleepy small town it once was. Now it’s a bustling metropolis on Australia’s quieter but beautiful West Coast, the perfect kicking off point to explore the other half of Oz. Like all major settlements in Australia, Perth is geared perfectly for the backpackers and budget traveller crowd, with countless bars, clubs and backpacker hostels all over the city.
+                			<br><br>An ideal kick off point for a night out is the Barracks Bar at the Old Swan Barracks Backpacker Hostel. It’s one of the best places in town to load up on cheap drinks, line your stomach and recruit fellow travellers for the night ahead. Alternatively you can grab a group and head to the Cottesloe Beach Hotel and watch the sunset over the beach with a few beers, not a bad way to start the evening.
+                			</p>
+              				<button id="perthbut1" class="btn btn-primary">Close</a>
+              			</div>
+         			</div>
+				</div>
+			</div>
+			<div class="perth_b">
+				<div class="col-lg-5" style="padding-left: 70px;">
+					<img src="perth.jpg" style="width: 450px; height: 200px; border: white solid 10px;">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+
+	<div class="container">
+  		<div class="jumbotron">
+    		<h1 style="font-family: 'Satisfy', cursive;">Your ultimate destination for leisure.</h1> 
+    			
+    			<p>Sign up for exciting offers!</p>
+    			<p>E-mail: <input type="e-mail" name="em" placeholder="Enter e-mail here" required="" id="em">
+    			<button type="button" class="btn btn-primary" style="margin-left: 20px; font-family: 'Alegreya SC', sans-serif; font-size: 20px;" id="buts" data-toggle="modal" data-target="#reg">Register</button></p>
+  		</div>
+	</div>
+
+
+
+	<!--Modal Contents-->
+	<!--PHILLIP-->
+	<div class="modal fade" id="phil" role="dialog">
+    	<div class="modal-dialog">
+    
+      		<!-- Modal content-->
+      		<div class="modal-content">
+        		<div class="modal-header">
+          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+          			<h4 class="modal-title" style="font-size: 30px;"><strong>Phillip Island</strong></h4>
+        		</div>
+        		<div class="modal-body">
+          			<p>Phillip Island, a popular day trip from Melbourne, lies just off Australia’s southern coast. At Summerland Beach, spectators gather daily at sunset to watch the Penguin Parade, when Little penguins come ashore in groups. The Nobbies outcrop is the viewing site for Seal Rocks, home to a large colony of Australian fur seals. The Phillip Island Circuit is a well-known track for motorcycle and car racing.
+          			<br><strong><span style="font-size: 25px;">Location: Melbourne.</span></strong></p>
+        		</div>
+        		<div class="modal-footer">
+          			<button type="button" class="btn btn-default" data-dismiss="modal" onsubmit="return formval()">Close</button>
+        		</div>
+      		</div>
+    	</div>
+  </div>
+
+ 	<!--GREAT OCEAN-->
+  	<div class="modal fade" id="gr8" role="dialog">
+    	<div class="modal-dialog">
+    
+      		<!-- Modal content-->
+      		<div class="modal-content">
+        		<div class="modal-header">
+          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+          			<h4 class="modal-title" style="font-size: 30px;"><strong>Great Ocean Tour</strong></h4>
+        		</div>
+        		<div class="modal-body">
+          			<p>The Twelve Apostles (Victoria) The Twelve Apostles is a collection of limestone stacks off the shore of the Port Campbell National Park, by the Great Ocean Road in Victoria, Australia. Their proximity to one another has made the site a popular tourist attraction.
+          				<br><strong><span style="font-size: 25px;">Location: 3 hours from Melbourne.</span></strong></p>
+        		</div>
+        		<div class="modal-footer">
+          			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        		</div>
+      		</div>
+    	</div>
+  	</div>
+
+  	<!--BLUE MOUNTAIN-->
+  	<div class="modal fade" id="bloo" role="dialog">
+    	<div class="modal-dialog">
+    
+      		<!-- Modal content-->
+      		<div class="modal-content">
+        		<div class="modal-header">
+          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+          			<h4 class="modal-title" style="font-size: 30px;"><strong>Blue Mountains</strong></h4>
+        		</div>
+        		<div class="modal-body">
+          			<p>The Blue Mountains is a rugged region west of Sydney in Australia’s New South Wales. Known for dramatic scenery, it encompasses steep cliffs, eucalyptus forests, waterfalls and villages dotted with guesthouses, galleries and gardens. Katoomba, a major town in the area, borders Blue Mountains National Park and its bushwalking trails. Echo Point affords views of the storied Three Sisters sandstone rock formation. <br><strong><span style="font-size: 25px;">Location: 2 hours from Sydney.</span></strong></p>
+        		</div>
+        		<div class="modal-footer">
+          			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        		</div>
+      		</div>
+    	</div>
+  	</div>
+
+  	<!--GREAT BARRIER REEF-->
+  	<div class="modal fade" id="barrier" role="dialog">
+    	<div class="modal-dialog">
+    
+      		<!-- Modal content-->
+      		<div class="modal-content">
+        		<div class="modal-header">
+          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+          			<h4 class="modal-title" style="font-size: 30px;"><strong>Great Barrier Reef</strong></h4>
+        		</div>
+        		<div class="modal-body">
+          			<p>The Great Barrier Reef, off the coast of Queensland in northeastern Australia, is the largest living thing on Earth, and even visible from outer space. The 2,300km-long ecosystem comprises thousands of reefs and hundreds of islands made of over 600 types of hard and soft coral. It's home to countless species of colourful fish, molluscs and starfish, plus turtles, dolphins and sharks.
+          				<br><strong><span style="font-size: 25px;">Location: Cairns.</span></strong></p>
+        		</div>
+        		<div class="modal-footer">
+          			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        		</div>
+      		</div>
+    	</div>
+  	</div>
+
+  	<!--Register button-->
+  	<div class="modal fade" id="reg" role="dialog">
+    	<div class="modal-dialog">
+    
+      		<!-- Modal content-->
+      		<div class="modal-content">
+        		<div class="modal-header">
+          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+        		</div>
+        		<div class="modal-body">
+        			<center><img src="doggo.gif" style="width: 500px;">
+          			<h3><strong>Thank You for registering!</strong></h3></center>
+        		</div>
+        		<div class="modal-footer">
+          			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        		</div>
+      		</div>
+    	</div>
+  	</div>
+
+  	<!-- <footer style="background-color: white; padding: 5px; text-align: center; font-size: 20px;">
+  		Contact for further information: Sandhya Suresh (E049)<br>
+  		Phone Number: +919876543210<br>
+  		Address: Chembur, Mumbai.
+  	</footer> -->
+  	<footer style="background-color: white; padding: 5px; text-align: center; font-size: 20px;">
+  		<div style="width: 100%;background-color: white;height: 1px;opacity: 0.1;margin-bottom: 2vw;"></div>
+		<a href="https://github.com/sandhyaasuresh"><img src="github1.png" width="5%" style="margin-bottom: 1.4vw;opacity: 0.7" id="githubLogo"></a>
+		<p style="margin-bottom: 1.4vw;text-transform: uppercase;"> Made by E049 <br>© Sandhya Suresh 2018</p>
+		</footer>
+	
+
+</body>
+</html>
